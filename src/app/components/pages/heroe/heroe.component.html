@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="row justify-content-center card">
+
+        <div class="offset-md-3 col-9 ">
+            <h3> Report an incident with hero {{id}}</h3>
+        </div>
+        <div class="col-12">
+            <div #ContainerRef1 class="card-body">
+                <form [formGroup]="incidentForm">
+                    <div class="col-12">
+                        <label>Type
+                            <select formControlName="type">
+                                <option *ngFor="let option of types" [ngValue]="option">{{ option }} </option>
+                            </select>
+                        </label>
+                        <p *ngIf="getError('type') as error" class="text-danger">
+                            {{ error }}
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <label>Title
+                            <input type="text" formControlName="title" />
+                        </label>
+                        <!-- Add a container for errors here -->
+                        <p *ngIf="getError('title') as error" class="text-danger">
+                            {{ error }}
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <label>Description
+                            <input type="text" formControlName="description" />
+                        </label>
+                        <!-- Add a container for errors here -->
+                        <p *ngIf="getError('description') as error" class="text-danger">
+                            {{ error }}
+                        </p>
+                    </div>
+
+                    <div class="col-12">
+                        <label>Site ID
+                            <input type="text" formControlName="siteId" />
+                        </label>
+                        <!-- Add a container for errors here -->
+                        <p *ngIf="getError('siteId') as error" class="text-danger">
+                            {{ error }}
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" [disabled]="!incidentForm.valid">Send report</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
