@@ -72,8 +72,11 @@ import { ManagmentRoutingModule } from './components/pages/managment/managment-r
 import { ManagmentModule } from './components/pages/managment/managment.module';
 
 
-
-
+import {RouterModule} from '@angular/router';
+import { MessageModule } from 'primeng/message';
+import { TabMenuModule } from 'primeng/tabmenu';
+import { MenubarModule } from 'primeng/menubar';
+import { PresentationComponent } from './components/shared/presentation/presentation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -87,6 +90,7 @@ import { ManagmentModule } from './components/pages/managment/managment.module';
     SpinnerComponent,
     ScrollTopComponent,
     ProfileComponent,
+    PresentationComponent,
   ],
   imports: [
     BrowserModule,
@@ -116,7 +120,13 @@ import { ManagmentModule } from './components/pages/managment/managment.module';
     InputTextModule,
     ProgressBarModule,
     ProgressSpinnerModule,
-    TooltipModule
+    TooltipModule,
+    TabMenuModule,
+    MessageModule,
+    MenubarModule,
+    InputTextModule,
+    ButtonModule
+    
   ],
   providers: [UserModel, AuthService, {
     provide: HTTP_INTERCEPTORS,

@@ -23,20 +23,23 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/css/bootstrap-datepicker/bootstrap-datepicker.min.css",
               "node_modules/datatables.net-dt/css/jquery.dataTables.css",
               "node_modules/datatables.net-buttons-dt/css/buttons.dataTables.css",
-
               "node_modules/webdatarocks/webdatarocks.min.css",
-            
               "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "node_modules/primeng/resources/primeng.min.css",
               "node_modules/primeicons/primeicons.css",
               "node_modules/primeng/resources/themes/saga-blue/theme.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/animate.css/animate.min.css"
+
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
@@ -108,7 +111,10 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
             "styles": [
               "src/styles.scss",
               "./node_modules/jqwidgets-ng/jqwidgets/styles/jqx.base.css",
@@ -125,7 +131,9 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "e2e": {
@@ -143,5 +151,8 @@
       }
     }
   },
-  "defaultProject": "correspondencia-dg-front"
+  "defaultProject": "correspondencia-dg-front",
+  "cli": {
+    "analytics": "410e7470-6d62-44ee-b0bc-06da2d89ea18"
+  }
 }

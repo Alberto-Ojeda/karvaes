@@ -14,16 +14,16 @@ const routes: Routes = [
   { path: 'managment', component: ManagmentComponent ,
     loadChildren: './components/pages/managment/managment.module#ManagmentModule'
   },
-  { path: 'login', component: LoginComponent },
-  { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
-  { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
+/*   { path: 'login', component: LoginComponent }, */
+  { path: 'home', component: HomeComponent },
+  { path: 'profile', component: ProfileComponent },
   
 
   
   { path: 'about', component: AboutComponent },
   { path: 'mantainance', component: MantainanceComponent },
   { path: 'heroe/:id', component: HeroeComponent, canActivate: [] },
-  { path: '**', pathMatch: 'full', redirectTo: 'login' },
+  { path: '**', pathMatch: 'full', redirectTo: 'home' },
 
 ];
 

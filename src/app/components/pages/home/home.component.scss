@@ -63,3 +63,11 @@ div.dataTables_wrapper {
   letter-spacing: 0.3px;
 }
 
+:root {
+  --animate-delay: 2s;
+}
+
+/* All delay classes will take half the time to start */
+:root {
+  --animate-delay: 0.5s;
+}
