@@ -11,7 +11,6 @@ import {
 } from '@angular/core';
 import { Router } from '@angular/router';
 /* import { single } from '../../../assets/json/data'; */
-
 import { ViewChild } from '@angular/core';
 import { SortEvent } from 'primeng/api';
 import { NgbDateStruct, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';

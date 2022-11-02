@@ -28,9 +28,9 @@ export class HeaderComponent implements OnInit{
   ngOnInit() {
     this.items = [
       {
-          label:'INICIO',
-          icon:'pi pi-fw pi-file',
-          items:[
+          label:'KARVAES',
+          icon:'pi pi-fw pi-home',
+          /* items:[
               {
                   label:'New',
                   icon:'pi pi-fw pi-plus',
@@ -57,7 +57,7 @@ export class HeaderComponent implements OnInit{
                   label:'Export',
                   icon:'pi pi-fw pi-external-link'
               }
-          ]
+          ] */
       },
       {
           label:'SERVICIOS',

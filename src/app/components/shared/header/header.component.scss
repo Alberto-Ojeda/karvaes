@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,600&display=swap');
+
 .user-dropdown
 {
     color:black;
 }
-
+.p-card .p-component {
+    background-color: lightblue !important;
+  }
 .user-caption{
     color: black;
     font: menu;
@@ -14,3 +18,4 @@
 #menubarHeader{
     background-color: rgb(11, 125, 155);
 }
+

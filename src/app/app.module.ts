@@ -77,6 +77,8 @@ import { MessageModule } from 'primeng/message';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { MenubarModule } from 'primeng/menubar';
 import { PresentationComponent } from './components/shared/presentation/presentation.component';
+
+import { CardModule } from 'primeng/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -91,8 +93,10 @@ import { PresentationComponent } from './components/shared/presentation/presenta
     ScrollTopComponent,
     ProfileComponent,
     PresentationComponent,
+
   ],
   imports: [
+    CardModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
