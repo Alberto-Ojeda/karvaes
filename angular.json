@@ -38,7 +38,8 @@
               "node_modules/primeicons/primeicons.css",
               "node_modules/primeng/resources/themes/saga-blue/theme.css",
               "src/styles.scss",
-              "node_modules/animate.css/animate.min.css"
+              "node_modules/animate.css/animate.min.css",
+              "node_modules/aos/dist/aos.css"
 
             ],
             "scripts": [

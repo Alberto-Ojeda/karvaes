@@ -6,7 +6,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { OnDestroy } from '@angular/core';
 import { NgxRolesService } from 'ngx-permissions';
 import {TabMenuModule} from 'primeng/tabmenu';
-import {MenuItem} from 'primeng/api';
+import {MenuItem, PrimeNGConfig} from 'primeng/api';
 import {MenubarModule} from 'primeng/menubar';
 
 @Component({
@@ -17,15 +17,16 @@ import {MenubarModule} from 'primeng/menubar';
 export class HeaderComponent implements OnInit{
 
 
-  constructor(
-
+  constructor(private primengConfig: PrimeNGConfig
   ) {
 
   }
  
   items: MenuItem[];
+  displayModal: boolean;
 
   ngOnInit() {
+    this.primengConfig.ripple = true;
     this.items = [
       {
           label:'KARVAES',
@@ -155,4 +156,6 @@ export class HeaderComponent implements OnInit{
       }
  */  ];
 }
+
+
   }

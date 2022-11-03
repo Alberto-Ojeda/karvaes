@@ -1,16 +1,144 @@
 <!--Herramienta para construir formularios
         https://bootstrapformbuilder.com/ -->
-<br>
-<div style="background-image:url(https://previews.123rf.com/images/skdesign/skdesign1501/skdesign150100022/38447884-minimalista-cuarto-de-ba%C3%B1o-interior-con-un-peque%C3%B1o-lavabo-en-un-contador-montado-en-la-pared-debajo-.jpg)" >
-<div class="container" style="margin-top: 100px;">
-    <p-card [style]="{'width':'50%'}">
-        <p>
-                Procesamiento de su contabilidad, que es, los datos (ingresos y egresos de los contribuyentes) de los diferentes regímenes fiscales establecidos por el SAT, como el 
-                resultado de operaciones financieras. Para calcular y determinar el pago de sus impuestos.
-El registro en sistemas contables, control de ingresos y egresos, dependiendo de la obligación que tenga el contribuyente, persona moral o persona física, de todas y cada una de sus operaciones.
-Presentación de los estados financieros y reportes auxiliares que permitan conocer la situación contable, para la toma de decisiones y el pago correcto y oportuno de las contribuciones retenidas y causadas.
+
+        
+       
+        <div   style="background-color: rgb(233, 233, 233); padding: 10em;" >
+                <div class="row animate__animated animate__fadeInLeft" style="  margin-left: 4em;" >
+        
+                   <!--  <div class="col-3" style="margin-top: -50px;   z-index: 0;            ">
+                        <img  src="assets/images/karvaes.png" alt="">
+                    </div>   -->  
+                    <h1 style="font-family: 'Cormorant',
+                     serif; font-size: 180px; color:black">
+                        KARVAES
+                    </h1>        
+                    
+                        <div style="width: 50%;">    
+                        <p style="text-align: justify; color: black; opacity: 1; ">
+                            En Karvaes, buscamos dar 100% satisfacción y atención personalizada a nuestros clientes.
+                            Somos un despacho familiar, constituido como Karvaes Servicios S.C., desde 2015.
+                            Nuestra rama profesional es la contaduría, trabajamos de manera independiente.
+                            Contamos con un grupo de clientes que se compone de, personas morales, personas físicas y negocios que tributan en RIF (Régimen de Plataformas Tecnologicas).
+                            Por lo que nuestros servicios contables abarcan diversos regímenes.
+                            Analizamos la necesidad del cliente, se definen las opciones y ahorro en tiempo para la entrega de resultados, con opinión del cliente se busca una forma de sintetizar la revisión de resultados y entrega oportuna de las obligaciones.
+                            </p>
+                        </div>
+            
+                        <!-- <div class="col-9 animate__animated animate__fadeInLeft" style="padding: 2em;" >
+                        <p-card header="" class="p-element animate__animated animate__fadeInLeft" [style]="{'width': '100%', 'margin-bottom': '4em','margin-top': '4em','padding': '1em',  'opacity':' 0.9' }">
+                      
+                    <ng-template pTemplate="header">
+                        
+                         </ng-template >
+                     <p style="text-align: justify; color: black; opacity: 1; ">
+                    En Karvaes, buscamos dar 100% satisfacción y atención personalizada a nuestros clientes.
+                    Somos un despacho familiar, constituido como Karvaes Servicios S.C., desde 2015.
+                    Nuestra rama profesional es la contaduría, trabajamos de manera independiente.
+                    Contamos con un grupo de clientes que se compone de, personas morales, personas físicas y negocios que tributan en RIF (Régimen de Plataformas Tecnologicas).
+                    Por lo que nuestros servicios contables abarcan diversos regímenes.
+                    Analizamos la necesidad del cliente, se definen las opciones y ahorro en tiempo para la entrega de resultados, con opinión del cliente se busca una forma de sintetizar la revisión de resultados y entrega oportuna de las obligaciones.
+                     </p>
+                    
+                    </p-card>
+                    
+                    </div> -->
+        </div>
+        
+        
+        </div>
+
+       
+
+   <div  data-aos="fade-left" style="background-color: white; padding: 2em;" >
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+                <div class="col">
+        <p-card [style]="{'width':'100%', 'background-color': 'rgb(240, 240, 240)'}">
+                <h6 style="text-align:center;" >Persona Fisicas</h6>
+                <br>
+                <p style="text-align:center ;">
+                        <button  (click)="showModalDialog()" pButton pRipple type="button" label="Personas Fisicas" class="p-button-raised p-button-secondary p-button-text" style="white"></button>
+                <p-dialog header="Header" [(visible)]="displayModal" [modal]="true" [style]="{width: '50vw'}" [baseZIndex]="10000"
+                    [draggable]="false" [resizable]="false">
+                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <ng-template pTemplate="footer">
+                            <p-button icon="pi pi-check" (click)="displayModal=false" label="Yes" class="p-button-text"></p-button>
+                            <p-button icon="pi pi-times" (click)="displayModal=false" label="No"></p-button>
+                        </ng-template>
+                </p-dialog>
         </p>
-</p-card>
+        </p-card>
+</div>
+<div class="col">
+        <p-card [style]="{'width':'100%', 'background-color': 'rgb(240, 240, 240)'}">
+                <h6 style="text-align:center;">Personas Morales</h6>
+                <br>
+                <p style="text-align:center ;">
+                        <button (click)="showModalDialog()" pButton pRipple type="button" label="Personas Morales" class="p-button-raised p-button-secondary p-button-text"></button>
+                        <p-dialog header="Header" [(visible)]="displayModal" [modal]="true" [style]="{width: '50vw'}" [baseZIndex]="10000"
+                            [draggable]="false" [resizable]="false">
+                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <ng-template pTemplate="footer">
+                                    <p-button icon="pi pi-check" (click)="displayModal=false" label="Yes" class="p-button-text"></p-button>
+                                    <p-button icon="pi pi-times" (click)="displayModal=false" label="No"></p-button>
+                                </ng-template>
+                        </p-dialog>
+                </p>
+                </p-card>
+</div>
+<div class="col">
+        <p-card [style]="{'width':'100%', 'background-color': 'rgb(240, 240, 240)'}">
+                <h6 style="text-align:center;" >Persona Regimen de incorporación fiscal</h6>
+                <p style="text-align:center ;">
+
+                        <button (click)="showModalDialog()" pButton pRipple type="button" label="Regimen fiscal" class="p-button-raised p-button-secondary p-button-text"></button>
+                <p-dialog header="Header" [(visible)]="displayModal" [modal]="true" [style]="{width: '50vw'}" [baseZIndex]="10000"
+                    [draggable]="false" [resizable]="false">
+                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <ng-template pTemplate="footer">
+                            <p-button icon="pi pi-check" (click)="displayModal=false" label="Yes" class="p-button-text"></p-button>
+                            <p-button icon="pi pi-times" (click)="displayModal=false" label="No"></p-button>
+                        </ng-template>
+                </p-dialog>
+                </p>
+                </p-card>
+</div>
+<div class="col">
+        <p-card [style]="{'width':'100%', 'background-color': 'rgb(240, 240, 240)'}">
+                <h6 style="text-align:center;" >Persona Regimen de plataformas técnologicas</h6>
+                <p style="text-align:center ;">
+
+                        <button (click)="showModalDialog()" pButton pRipple type="button" label="Regimen Plataformas" class="p-button-raised p-button-secondary p-button-text"></button>
+                <p-dialog header="Header" [(visible)]="displayModal" [modal]="true" [style]="{width: '50vw'}" [baseZIndex]="10000"
+                    [draggable]="false" [resizable]="false">
+                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <ng-template pTemplate="footer">
+                            <p-button icon="pi pi-check" (click)="displayModal=false" label="Yes" class="p-button-text"></p-button>
+                            <p-button icon="pi pi-times" (click)="displayModal=false" label="No"></p-button>
+                        </ng-template>
+                </p-dialog>
+        </p>
+
+                </p-card>
+</div>
 
 </div>
 </div>
+
+<section id="home">
+
+</section>

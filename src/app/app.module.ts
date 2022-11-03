@@ -129,7 +129,8 @@ import { CardModule } from 'primeng/card';
     MessageModule,
     MenubarModule,
     InputTextModule,
-    ButtonModule
+    ButtonModule,
+    DialogModule
     
   ],
   providers: [UserModel, AuthService, {

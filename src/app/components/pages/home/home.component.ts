@@ -12,7 +12,7 @@ import {
 import { Router } from '@angular/router';
 /* import { single } from '../../../assets/json/data'; */
 import { ViewChild } from '@angular/core';
-import { SortEvent } from 'primeng/api';
+import { PrimeNGConfig, SortEvent } from 'primeng/api';
 import { NgbDateStruct, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 
@@ -22,6 +22,7 @@ import {
 } from 'ngx-bootstrap/datepicker';
 
 import * as xml2js from 'xml2js';
+import * as AOS from 'aos';
 
 import Swal from 'sweetalert2';
 
@@ -75,8 +76,9 @@ https://valor-software.com/ngx-bootstrap/#/datepicker#min-mode
   progressPercent: number;
 
   cols: any[];
+  displayModal: boolean;
 
-  constructor(
+  constructor( private primengConfig: PrimeNGConfig,
     private renderer: Renderer2,
     private router: Router,
     private ps: NgxPermissionsService,
@@ -86,9 +88,14 @@ https://valor-software.com/ngx-bootstrap/#/datepicker#min-mode
   permissions$ = this.ps.permissions$;
   roles$ = this.rs.roles$;
   ngOnInit(): void {
-    
-  }
+    this.primengConfig.ripple = true;
 
+    AOS.init();
+
+  }
+  showModalDialog() {
+    this.displayModal = true;
+}
   ngAfterViewInit(): void {
     this.renderer.listen('document', 'click', (event) => {
       if (event.target.hasAttribute('view-link-id')) {
