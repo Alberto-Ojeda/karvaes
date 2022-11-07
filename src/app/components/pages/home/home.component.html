@@ -3,19 +3,20 @@
 
         
        
-        <div   style="background-color: rgb(233, 233, 233); padding: 10em;" >
+        <div    style=" background-image:url('assets/images/fondo.jpg'); padding: 10em;" >
+                
                 <div class="row animate__animated animate__fadeInLeft" style="  margin-left: 4em;" >
         
                    <!--  <div class="col-3" style="margin-top: -50px;   z-index: 0;            ">
                         <img  src="assets/images/karvaes.png" alt="">
                     </div>   -->  
                     <h1 style="font-family: 'Cormorant',
-                     serif; font-size: 180px; color:black">
+                     serif; font-size: 180px; color:rgb(163, 119, 5)">
                         KARVAES
                     </h1>        
                     
                         <div style="width: 50%;">    
-                        <p style="text-align: justify; color: black; opacity: 1; ">
+                        <p style="text-align: justify; color:white; opacity: 1; ">
                             En Karvaes, buscamos dar 100% satisfacción y atención personalizada a nuestros clientes.
                             Somos un despacho familiar, constituido como Karvaes Servicios S.C., desde 2015.
                             Nuestra rama profesional es la contaduría, trabajamos de manera independiente.
@@ -50,7 +51,7 @@
 
        
 
-   <div  data-aos="fade-left" style="background-color: white; padding: 2em;" >
+   <div  data-aos="flip-left" style="background-color: white; padding: 2em;" >
         <br>
         <br>
         <br>
@@ -59,11 +60,11 @@
         <br>
         <div class="row">
                 <div class="col">
-        <p-card [style]="{'width':'100%', 'background-color': 'rgb(240, 240, 240)'}">
+        <p-card [style]="{'width':'100%', 'background-image':'url( assets/images/minimalist.jpg)'}">
                 <h6 style="text-align:center;" >Persona Fisicas</h6>
                 <br>
                 <p style="text-align:center ;">
-                        <button  (click)="showModalDialog()" pButton pRipple type="button" label="Personas Fisicas" class="p-button-raised p-button-secondary p-button-text" style="white"></button>
+                        <button  (click)="showModalDialog()" pButton pRipple type="button" label="Personas Fisicas" class="p-button-raised p-button-secondary p-button-text"></button>
                 <p-dialog header="Header" [(visible)]="displayModal" [modal]="true" [style]="{width: '50vw'}" [baseZIndex]="10000"
                     [draggable]="false" [resizable]="false">
                     <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -78,7 +79,7 @@
         </p-card>
 </div>
 <div class="col">
-        <p-card [style]="{'width':'100%', 'background-color': 'rgb(240, 240, 240)'}">
+        <p-card [style]="{'width':'100%', 'background-image':'url( assets/images/minimalist.jpg)'}">
                 <h6 style="text-align:center;">Personas Morales</h6>
                 <br>
                 <p style="text-align:center ;">
@@ -96,9 +97,10 @@
                 </p>
                 </p-card>
 </div>
-<div class="col">
-        <p-card [style]="{'width':'100%', 'background-color': 'rgb(240, 240, 240)'}">
+<div style="" class="col">
+        <p-card [style]="{'width':'100%',  'background-image':'url( assets/images/minimalist.jpg)'}">
                 <h6 style="text-align:center;" >Persona Regimen de incorporación fiscal</h6>
+                <br>
                 <p style="text-align:center ;">
 
                         <button (click)="showModalDialog()" pButton pRipple type="button" label="Regimen fiscal" class="p-button-raised p-button-secondary p-button-text"></button>
@@ -116,8 +118,9 @@
                 </p-card>
 </div>
 <div class="col">
-        <p-card [style]="{'width':'100%', 'background-color': 'rgb(240, 240, 240)'}">
+        <p-card [style]="{'width':'100%', 'background-image':'url( assets/images/minimalist.jpg)'}">
                 <h6 style="text-align:center;" >Persona Regimen de plataformas técnologicas</h6>
+                <br>
                 <p style="text-align:center ;">
 
                         <button (click)="showModalDialog()" pButton pRipple type="button" label="Regimen Plataformas" class="p-button-raised p-button-secondary p-button-text"></button>
@@ -138,7 +141,5 @@
 
 </div>
 </div>
-
-<section id="home">
-
-</section>
+<br>
+<app-contacto></app-contacto>

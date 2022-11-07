@@ -1,5 +1,5 @@
 import { AfterContentInit, Component, OnInit, isDevMode } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { AuthService } from '../../../services/auth/auth.service';
 import { UserModel } from '../../../models/user/user.module';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
@@ -28,9 +28,12 @@ export class HeaderComponent implements OnInit{
   ngOnInit() {
     this.primengConfig.ripple = true;
     this.items = [
+        
       {
           label:'KARVAES',
           icon:'pi pi-fw pi-home',
+          routerLink: ['/home']
+          ,
           /* items:[
               {
                   label:'New',
@@ -63,10 +66,13 @@ export class HeaderComponent implements OnInit{
       {
           label:'SERVICIOS',
           icon:'pi pi-fw pi-pencil',
-          items:[
+          routerLink: ['/servicio']          
+/*           items:[
               {
                   label:'Left',
-                  icon:'pi pi-fw pi-align-left'
+                  icon:'pi pi-fw pi-align-left',
+                  routerLink: ['/servicio']
+
               },
               {
                   label:'Right',
@@ -82,11 +88,12 @@ export class HeaderComponent implements OnInit{
               },
 
           ]
-      },
+  */     },
       {
           label:'NOSOTROS',
           icon:'pi pi-fw pi-users',
-          items:[
+          routerLink: ['/nosotros']                    
+      /*     items:[
               {
                   label:'New',
                   icon:'pi pi-fw pi-user-plus',
@@ -117,12 +124,13 @@ export class HeaderComponent implements OnInit{
                   }
                   ]
               }
-          ]
+          ] */
       },
       {
           label:'CONTACTO',
           icon:'pi pi-fw pi-calendar',
-          items:[
+          routerLink: ['/contacto']
+/*           items:[
               {
                   label:'Edit',
                   icon:'pi pi-fw pi-pencil',
@@ -148,7 +156,7 @@ export class HeaderComponent implements OnInit{
                   }
                   ]
               }
-          ]
+          ] */
       },
 /*       {
           label:'Quit',

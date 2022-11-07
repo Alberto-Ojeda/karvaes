@@ -8,6 +8,9 @@ import { AuthGuard } from './guards/auth.guard';
 import { MantainanceComponent } from './components/pages/mantainance/mantainance.component';
 import { ProfileComponent } from './components/shared/profile/profile.component';
 import { ManagmentComponent } from './components/pages/managment/managment.component';
+import { ServicesComponent } from './components/pages/services/services.component';
+import { NosotrosComponent } from './components/pages/nosotros/nosotros.component';
+import { ContactoComponent } from './components/pages/contacto/contacto.component';
 
 //En todos los componentes que tengan el canActivate se mostrara la barra de navegacion
 const routes: Routes = [
@@ -16,6 +19,9 @@ const routes: Routes = [
   },
 /*   { path: 'login', component: LoginComponent }, */
   { path: 'home', component: HomeComponent },
+  { path: 'servicio', component: ServicesComponent},
+  { path: 'nosotros', component: NosotrosComponent},
+  { path: 'contacto', component: ContactoComponent},
   { path: 'profile', component: ProfileComponent },
   
 

@@ -90,7 +90,9 @@ https://valor-software.com/ngx-bootstrap/#/datepicker#min-mode
   ngOnInit(): void {
     this.primengConfig.ripple = true;
 
-    AOS.init();
+    AOS.init({
+      duration: 2450,
+    });
 
   }
   showModalDialog() {

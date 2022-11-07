@@ -79,6 +79,7 @@ import { MenubarModule } from 'primeng/menubar';
 import { PresentationComponent } from './components/shared/presentation/presentation.component';
 
 import { CardModule } from 'primeng/card';
+import { ContactoComponent } from './components/pages/contacto/contacto.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -93,6 +94,7 @@ import { CardModule } from 'primeng/card';
     ScrollTopComponent,
     ProfileComponent,
     PresentationComponent,
+    ContactoComponent
 
   ],
   imports: [
@@ -128,9 +130,9 @@ import { CardModule } from 'primeng/card';
     TabMenuModule,
     MessageModule,
     MenubarModule,
-    InputTextModule,
     ButtonModule,
-    DialogModule
+    DialogModule,
+    
     
   ],
   providers: [UserModel, AuthService, {
