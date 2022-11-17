@@ -81,6 +81,8 @@ import { CardModule } from 'primeng/card';
 import { ContactoComponent } from './components/pages/contacto/contacto.component';
 import {GMapModule} from 'primeng/gmap';
 import { MapsComponent } from './components/pages/maps/maps.component';
+import { ServicesComponent } from './components/pages/services/services.component';
+import {ChartModule} from 'primeng/chart';
 
 @NgModule({
   declarations: [
@@ -97,7 +99,8 @@ import { MapsComponent } from './components/pages/maps/maps.component';
     ProfileComponent,
     PresentationComponent,
     ContactoComponent,
-    MapsComponent
+    MapsComponent,
+    ServicesComponent
 
   ],
   imports: [
@@ -135,7 +138,8 @@ import { MapsComponent } from './components/pages/maps/maps.component';
     MenubarModule,
     ButtonModule,
     DialogModule,
-    GMapModule
+    GMapModule,
+    
     
     
     

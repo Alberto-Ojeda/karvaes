@@ -15,20 +15,35 @@ export class MapsComponent implements OnInit {
     this.mapa = new mapboxgl.Map({
     container: 'mapa',
     style: 'mapbox://styles/mapbox/streets-v11', 
-    center: [-74.5, 40], 
-    zoom: 18, 
+    center: [-99.12493054986257,19.372990988877753,], 
+    zoom:16, 
     });
     
 
-    this.crearMarker(-74.5, 40)
+    this.crearMarker(-99.12493054986257,19.372990988877753,)
   }
 
 
-  crearMarker(lng: number ,lat: number){
-    const  marker = new  mapboxgl.marker({
-      draggable:true
-    })
+  crearMarker(lng: number  ,lat: number){
+    const title='Karvaes Servicios SC'
+    const description='Ven y comprueba lo mejor de nuestros servicios'
+    
+    const el = document.createElement('div');
+    el.className = 'marker';
+    el.style.backgroundImage = `url(assets/images/karvaesLogo.png)`;
+    const width = 160;
+    const height = 160;
+    el.style.width = `${width}px`;
+    el.style.height = `${height}px`;
+    el.style.backgroundSize = '100%';
+    const  marker = new  mapboxgl.Marker(el)
     .setLngLat([lng,lat])
+    .setPopup(
+      new mapboxgl.Popup({ offset: 25 }) // add popups
+        .setHTML(
+          `<h3>${title}</h3><p>${description}</p>`
+        )
+    )
     .addTo(this.mapa);
 
   }
