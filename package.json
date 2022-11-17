@@ -53,6 +53,7 @@
     "jspdf": "^1.5.3",
     "jspdf-autotable": "^3.2.5",
     "jszip": "^3.5.0",
+    "mapbox-gl": "^2.10.0",
     "moment": "^2.29.1",
     "ngx-bootstrap": "^6.2.0",
     "ngx-permissions": "^8.1.1",

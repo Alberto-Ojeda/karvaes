@@ -1,6 +1,5 @@
 import { AfterContentInit, Component, OnInit, isDevMode } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
-import { AuthService } from '../../../services/auth/auth.service';
 import { UserModel } from '../../../models/user/user.module';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { OnDestroy } from '@angular/core';

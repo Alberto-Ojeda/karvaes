@@ -4,7 +4,6 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { LoginComponent } from './components/pages/login/login.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { HeroeComponent } from './components/pages/heroe/heroe.component';
-import { AuthGuard } from './guards/auth.guard';
 import { MantainanceComponent } from './components/pages/mantainance/mantainance.component';
 import { ProfileComponent } from './components/shared/profile/profile.component';
 import { ManagmentComponent } from './components/pages/managment/managment.component';

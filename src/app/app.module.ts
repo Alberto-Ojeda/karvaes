@@ -5,7 +5,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 //Http Requests
 import { HttpClientModule, HttpHeaders, HTTP_INTERCEPTORS } from '@angular/common/http';
 //Services
-import { AuthService } from './services/auth/auth.service';
 
 //Models
 import { UserModel } from './models/user/user.module';
@@ -80,6 +79,9 @@ import { PresentationComponent } from './components/shared/presentation/presenta
 
 import { CardModule } from 'primeng/card';
 import { ContactoComponent } from './components/pages/contacto/contacto.component';
+import {GMapModule} from 'primeng/gmap';
+import { MapsComponent } from './components/pages/maps/maps.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -94,7 +96,8 @@ import { ContactoComponent } from './components/pages/contacto/contacto.componen
     ScrollTopComponent,
     ProfileComponent,
     PresentationComponent,
-    ContactoComponent
+    ContactoComponent,
+    MapsComponent
 
   ],
   imports: [
@@ -132,10 +135,12 @@ import { ContactoComponent } from './components/pages/contacto/contacto.componen
     MenubarModule,
     ButtonModule,
     DialogModule,
+    GMapModule
+    
     
     
   ],
-  providers: [UserModel, AuthService, {
+  providers: [UserModel,  {
     provide: HTTP_INTERCEPTORS,
     useClass: AuthInterceptor,
     multi: true

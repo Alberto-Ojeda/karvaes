@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl:'http://192.168.0.8:4200/angular_demo/api/v1/'
+  mapboxKey: 'pk.eyJ1IjoiYWxiZXJ0bzIxMyIsImEiOiJjbGFnY3htc3MwYWxqM29tOHpheHEzcTFkIn0.6wKtMllsAsbVUoBnMuSLyw'
  
 };
 
