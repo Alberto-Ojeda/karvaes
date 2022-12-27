@@ -65,20 +65,22 @@ export class HeaderComponent implements OnInit{
       {
           label:'SERVICIOS',
           icon:'pi pi-fw pi-pencil',
-          routerLink: ['/servicio']          
-/*           items:[
+/*           routerLink: ['/servicio'],           */
+           items:[
               {
-                  label:'Left',
+                  label:'Contabilidad',
                   icon:'pi pi-fw pi-align-left',
                   routerLink: ['/servicio']
 
               },
               {
-                  label:'Right',
-                  icon:'pi pi-fw pi-align-right'
+                  label:'Servicios Legales',
+                  icon:'pi pi-fw pi-align-right',
+                  routerLink: ['/transporte']
+
               },
               {
-                  label:'Center',
+                  label:'Transportación',
                   icon:'pi pi-fw pi-align-center'
               },
               {
@@ -87,12 +89,12 @@ export class HeaderComponent implements OnInit{
               },
 
           ]
-  */     },
+       },
       {
           label:'NOSOTROS',
           icon:'pi pi-fw pi-users',
-          routerLink: ['/nosotros']                    
-      /*     items:[
+          routerLink: ['/nosotros'],                    
+          items:[
               {
                   label:'New',
                   icon:'pi pi-fw pi-user-plus',
@@ -123,7 +125,7 @@ export class HeaderComponent implements OnInit{
                   }
                   ]
               }
-          ] */
+          ] 
       },
       {
           label:'CONTACTO',

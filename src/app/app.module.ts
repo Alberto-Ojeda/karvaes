@@ -83,7 +83,7 @@ import {GMapModule} from 'primeng/gmap';
 import { MapsComponent } from './components/pages/maps/maps.component';
 import { ServicesComponent } from './components/pages/services/services.component';
 import {ChartModule} from 'primeng/chart';
-
+import { KarvaesTransportingComponent } from './components/pages/karvaes-transporting/karvaes-transporting.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -100,8 +100,8 @@ import {ChartModule} from 'primeng/chart';
     PresentationComponent,
     ContactoComponent,
     MapsComponent,
-    ServicesComponent
-
+    ServicesComponent,
+    KarvaesTransportingComponent
   ],
   imports: [
     CardModule,

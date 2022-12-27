@@ -10,7 +10,7 @@ import { ManagmentComponent } from './components/pages/managment/managment.compo
 import { ServicesComponent } from './components/pages/services/services.component';
 import { NosotrosComponent } from './components/pages/nosotros/nosotros.component';
 import { ContactoComponent } from './components/pages/contacto/contacto.component';
-
+import { KarvaesTransportingComponent } from './components/pages/karvaes-transporting/karvaes-transporting.component';
 //En todos los componentes que tengan el canActivate se mostrara la barra de navegacion
 const routes: Routes = [
   { path: 'managment', component: ManagmentComponent ,
@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'nosotros', component: NosotrosComponent},
   { path: 'contacto', component: ContactoComponent},
   { path: 'profile', component: ProfileComponent },
-  
+  { path: 'transporte', component: KarvaesTransportingComponent},
 
   
   { path: 'about', component: AboutComponent },

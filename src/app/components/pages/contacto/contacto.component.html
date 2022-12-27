@@ -1,7 +1,7 @@
 <div    style=" background-image:url('assets/images/vector.jpg'); padding: 10em;" >
 	<div class="row">
 		<div class="col" style="margin-top: -100px;">
-			<h2 style=" font-family:  serif; font-size: 40px;">Contactanos y ¡Trabajemos juntos!</h2>
+			<h2 style="font-family: 'Secular One' ">Contactanos y ¡Trabajemos juntos!</h2>
 			<p style=" font-family: 'Cormorant', serif;margin: 20px 100px 20px 20px ; text-align: justify; font-size: 20px;">
 				<strong>Si deseas consultar mayor información sobre nuestros servicios o tienes alguna duda 
 				 al respecto, no dudes en solicitar una consultoría gratuita y uno de nuestros 
@@ -13,16 +13,38 @@
 		<div class="col-6">
 			<p-card [style]="{ }">
 				<h2 style="text-align: center;">Contactanos</h2>
-			<form id="form" class="topBefore">
-					
-					  <input id="name" type="text" placeholder="NAME">
-					  <input id="email" type="text" placeholder="E-MAIL">
-					  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-			  <input id="submit" type="submit" value="GO!">
+
+				<form (submit)="sendNotification()" [formGroup]="aFormGroup">
+						  <input inputId="name" formControlName="name" type="text" name="name" class="form-control" placeholder="Full Name" required>
+						  <input inputId="email" formControlName="email"  type="email" name="email" class="form-control" placeholder="Email Address" required>
+					  <textarea placeholder="Describe la información a consultar" class="form-control" 
+					  inputId="message" formControlName="message"  type="message" rows="10" required></textarea>
+
+					<button type="submit" class="btn btn-lg btn-dark btn-block">Enviar notificación</button>
+					<input inputId="_captcha" type="hidden"  formControlName="_captcha" name="_captcha" class="form-control"  value="false">
+
+				  </form>
+
+
+<!-- 				<form class="topBefore" id="contactform" action="https://formsubmit.co/albertoojeda44@aragon.unam.mx" method="POST">
+					<input name="name" type="text" id="name" placeholder="NAME">
+					<input name="email" type="email" placeholder="E-MAIL" id="email">
+					<textarea name="comment" id="comment" placeholder="MENSAJE" rows="3"></textarea>
+					<input name="_formsubmit_id" type="text" style="display:none">
+				
+					<input value="Submit" type="submit">
+
+			   </form> -->
+
+
+				
+
+	
 			  
-			</form>
 			</p-card>
 		</div>
 	</div>
+<div style="margin-top: 20%;">
 
+</div>
 </div>
