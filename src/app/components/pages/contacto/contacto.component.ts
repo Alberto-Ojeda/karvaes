@@ -132,7 +132,7 @@ sendNotification(){
         }
       )
     } else if (result.isDenied) {
-      Swal.fire("Favor de revisar el intervalo de fechas", "", "info");
+      Swal.fire("Favor de revisar la información proporcionada", "", "info");
     }
   });
 }

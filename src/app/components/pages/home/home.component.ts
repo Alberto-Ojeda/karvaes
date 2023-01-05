@@ -91,7 +91,7 @@ https://valor-software.com/ngx-bootstrap/#/datepicker#min-mode
     this.primengConfig.ripple = true;
 
     AOS.init({
-      duration: 2450,
+      duration: 3000,
     });
 
   }

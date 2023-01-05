@@ -1,22 +1,22 @@
 <div    style=" background-image:url('assets/images/vector.jpg'); padding: 10em;" >
 	<div class="row">
 		<div class="col" style="margin-top: -100px;">
-			<h2 style="font-family: 'Secular One' ">Contactanos y ¡Trabajemos juntos!</h2>
-			<p style=" font-family: 'Cormorant', serif;margin: 20px 100px 20px 20px ; text-align: justify; font-size: 20px;">
+			<h1 style="font-family: 'Secular One';color: #0143A0; ">Contactanos y ¡Trabajemos juntos!</h1>
+			<p style=" font-family: 'Cormorant', serif;margin: 20px 100px 20px 20px ; text-align: justify; font-size: 28px;">
 				<strong>Si deseas consultar mayor información sobre nuestros servicios o tienes alguna duda 
 				 al respecto, no dudes en solicitar una consultoría gratuita y uno de nuestros 
 				asesores te contactará a la brevedad.</strong></p>
-				<h5><a style="text-decoration: none; color:black" target="_blank" href="https://wa.link/qfr0r4"><img src="assets/images/whats.png" style="width: 20px;" alt=""> whatsapp: 5584252866</a></h5>
-				<h5 style="margin-bottom: -25px;">Retoño 809 #162 Col. El Retoño C.P. 09440</h5>
+				<h5><a style="text-decoration: none; color:black; font-size: 26px;" target="_blank" href="https://wa.link/qfr0r4"><img src="assets/images/whats.png" style="width: 20px;" alt=""> whatsapp: 5584252866</a></h5>
+				<h5 style="margin-bottom: -25px;font-size: 26px;">Retoño 809 #162 Col. El Retoño C.P. 09440</h5>
 				<app-maps></app-maps>
 		</div>
-		<div class="col-6">
+		<div class="col">
 			<p-card [style]="{ }">
 				<h2 style="text-align: center;">Contactanos</h2>
 
-				<form (submit)="sendNotification()" [formGroup]="aFormGroup">
+				<form  (submit)="sendNotification()" [formGroup]="aFormGroup">
 					<div class="input-wrapper">
-						<input inputId="name" formControlName="name" type="text" name="name" class="form-control input" placeholder="Full Name" required>
+						<input inputId="name" formControlName="name" type="text" name="name" class="form-control input" placeholder="Nombre" required>
 					
 						
 						  <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
@@ -26,13 +26,13 @@
 		
 		
 					<div class="input-wrapper">
-						<input inputId="email" formControlName="email"  type="email" name="email" class="form-control input" placeholder="Email Address" required>
+						<input inputId="email" formControlName="email"  type="email" name="email" class="form-control input" placeholder="Correo Electronico" required>
 						<svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
 							<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
 						  </svg>
 					</div>
 					  <textarea placeholder="Describe la información a consultar" class="form-control" 
-					  inputId="message" formControlName="message"  type="message" rows="10" required></textarea>
+					  inputId="message" formControlName="message"  type="message"  required></textarea>
 
 					<button type="submit" class="btn btn-lg btn-dark btn-block">Enviar notificación</button>
 					<input inputId="_captcha" type="hidden"  formControlName="_captcha" name="_captcha" class="form-control"  value="false">

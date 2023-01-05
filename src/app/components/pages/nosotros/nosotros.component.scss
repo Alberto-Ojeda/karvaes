@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Source+Serif+Pro:ital,wght@1,600&display=swap'); 
+
+.noPadding{
+    padding: 0px;
+  
+  }
+  
+  .filterBack{
+  
+    background-position: top;
+    min-height: 450px;
+    color: red;
+    font-weight: bold;
+    background-attachment: fixed;
+  }
+  .abs{
+    position: absolute;
+    top: 0px;
+    background-color: #000;
+    position: absolute;
+    top: 0px;
+    min-height: 450px;
+    background-color: #00000002;
+    width: 100%;
+    color: #fff;
+  
+  }
+  
+  .absTitle{
+    margin-top: 130px;
+    font-weight: bold;
+    font-size: 120px;
+  }
+  

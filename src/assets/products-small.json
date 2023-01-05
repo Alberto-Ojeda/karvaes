@@ -1,0 +1,124 @@
+{
+	"data": [
+		{
+			"id": "1000",
+			"code": "f230fh0g3",
+			"name": "Santiago Hernandez",
+			"description": "Fiscales",
+			"image": "assets/images/personas/7.jpg",
+			"price": 65,
+			"category": "Accessories",
+			"quantity": 24,
+			"inventoryStatus": "A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...",
+			"rating": 5
+		},
+		{
+			"id": "1001",
+			"code": "nvklal433",
+			"name": "Francisco Sanchez",
+			"description": "Contables",
+			"image": "assets/images/personas/8.jpg",
+			"price": 72,
+			"category": "Accessories",
+			"quantity": 61,
+			"inventoryStatus": "A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...",
+			"rating": 4
+		},
+		{
+			"id": "1002",
+			"code": "zz21cz3c1",
+			"name": "Ruben Rodriguez",
+			"description": "Auditoria Fiscal",
+			"image": "assets/images/personas/1.jpg",
+			"price": 79,
+			"category": "Fitness",
+			"quantity": 2,
+			"inventoryStatus": "A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...",
+			"rating": 3
+		},
+		{
+			"id": "1003",
+			"code": "244wgerg2",
+			"name": "Selena Gomez",
+			"description": "Contabilidad",
+			"image": "assets/images/personas/2.jpg",
+			"price": 29,
+			"category": "Clothing",
+			"quantity": 25,
+			"inventoryStatus": "A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...",
+			"rating": 5
+		},
+		{
+			"id": "1004",
+			"code": "h456wer53",
+			"name": "Rolando Sanchez",
+			"description": "Auditoria IMSS",
+			"image": "assets/images/personas/3.jpg",
+			"price": 15,
+			"category": "Accessories",
+			"quantity": 73,
+			"inventoryStatus": "A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...",
+			"rating": 4
+		},
+		{
+			"id": "1005",
+			"code": "av2231fwg",
+			"name": "Antonio Perez",
+			"description": "Infonavit",
+			"image": "assets/images/personas/4.jpg",
+			"price": 120,
+			"category": "Accessories",
+			"quantity": 0,
+			"inventoryStatus": "A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...",
+			"rating": 4
+		},
+		{
+			"id": "1006",
+			"code": "bib36pfvm",
+			"name": "Ruben Bracelet",
+			"description": "Personas Fisicas",
+			"image": "assets/images/personas/5.jpg",
+			"price": 32,
+			"category": "Accessories",
+			"quantity": 5,
+			"inventoryStatus": "A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...",
+			"rating": 3
+		},
+		{
+			"id": "1007",
+			"code": "mbvjkgip5",
+			"name": "Alberto Ojeda",
+			"description": "Persona Moral",
+			"image": "assets/images/personas/6.jpg",
+			"price": 34,
+			"category": "Accessories",
+			"quantity": 23,
+			"inventoryStatus": "A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...",
+			"rating": 5
+		},
+		{
+			"id": "1008",
+			"code": "vbb124btr",
+			"name": "Diego Jimenez",
+			"description": "Seguimiento de impuestos",
+			"image": "assets/images/personas/7.jpg",
+			"price": 99,
+			"category": "Electronics",
+			"quantity": 2,
+			"inventoryStatus": "A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...",
+			"rating": 4
+		},
+		{
+			"id": "1009",
+			"code": "cm230f032",
+			"name": "Fernanda Solano",
+			"description": "Seguimiento de pagos",
+			"image": "assets/images/personas/8.jpg",
+			"price": 299,
+			"category": "Electronics",
+			"quantity": 63,
+			"inventoryStatus": "A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...A mi me gusto mucho los servicios porque...",
+			"rating": 3
+		}
+	]
+}

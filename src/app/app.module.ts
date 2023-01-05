@@ -84,6 +84,12 @@ import { MapsComponent } from './components/pages/maps/maps.component';
 import { ServicesComponent } from './components/pages/services/services.component';
 import {ChartModule} from 'primeng/chart';
 import { KarvaesTransportingComponent } from './components/pages/karvaes-transporting/karvaes-transporting.component';
+import { TestimonyComponent } from './components/pages/testimony/testimony.component';
+import { TestimonialsComponent } from './components/pages/testimonials/testimonials.component';
+import {CarouselModule} from 'primeng/carousel';
+import { ProductService } from './components/pages/testimonials/productservice'; 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -101,7 +107,9 @@ import { KarvaesTransportingComponent } from './components/pages/karvaes-transpo
     ContactoComponent,
     MapsComponent,
     ServicesComponent,
-    KarvaesTransportingComponent
+    KarvaesTransportingComponent,
+    TestimonyComponent,
+    TestimonialsComponent
   ],
   imports: [
     CardModule,
@@ -139,14 +147,16 @@ import { KarvaesTransportingComponent } from './components/pages/karvaes-transpo
     ButtonModule,
     DialogModule,
     GMapModule,
-    
+    CarouselModule,
+
     
     
     
   ],
-  providers: [UserModel,  {
+  providers: [UserModel,ProductService,  {
     provide: HTTP_INTERCEPTORS,
     useClass: AuthInterceptor,
+    
     multi: true
   }],
   bootstrap: [AppComponent],
