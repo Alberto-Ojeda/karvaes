@@ -87,7 +87,8 @@ import { KarvaesTransportingComponent } from './components/pages/karvaes-transpo
 import { TestimonyComponent } from './components/pages/testimony/testimony.component';
 import { TestimonialsComponent } from './components/pages/testimonials/testimonials.component';
 import {CarouselModule} from 'primeng/carousel';
-import { ProductService } from './components/pages/testimonials/productservice'; 
+import { ProductService } from './components/pages/testimonials/productservice';
+import { NoticePrivacyComponent } from './components/pages/notice-privacy/notice-privacy.component'; 
 
 
 @NgModule({
@@ -109,7 +110,8 @@ import { ProductService } from './components/pages/testimonials/productservice';
     ServicesComponent,
     KarvaesTransportingComponent,
     TestimonyComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    NoticePrivacyComponent
   ],
   imports: [
     CardModule,
